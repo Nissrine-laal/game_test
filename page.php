@@ -19,9 +19,7 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <H1>
-            Game title
-        </H1>
+        
        
     </body>
 </html>
