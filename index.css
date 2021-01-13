@@ -3,6 +3,13 @@
     height: 100%;
     background-color: #6BC7A6;
 }
+.sub_general{
+    width:100%;
+    height: 94%;
+    top:0;
+    position: absolute;
+    background-color: #6BC7A6;
+}
 .center{
     border-radius: 150px;
     height:55%;
@@ -84,4 +91,18 @@ a{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 40px;
     width:100%;
+}
+.copyrights{
+    height: 6%;
+    width: 100%;
+    background-color: #0A5687;
+    bottom:0;
+    position: absolute;
+}
+.copyrights_text{
+    font-size: 30px;
+    color: white;
+    margin-top: 0;
+    width:100%;
+    text-align: center;
 }
