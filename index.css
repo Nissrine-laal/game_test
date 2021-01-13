@@ -68,3 +68,20 @@ a{
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+.rules{
+    width: 82%;
+    height: 82%;
+    padding: 8%;
+    overflow-y: auto;
+    position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+    right: 0;
+    margin: auto;
+}
+.rule{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    width:100%;
+}
