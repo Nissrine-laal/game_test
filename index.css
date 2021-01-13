@@ -34,3 +34,31 @@
     height:100%;
     text-align: center;
 }
+a{
+    text-decoration: none;
+}
+.but{
+    height: 50%;
+    width:90%;
+    position: absolute;
+    top:50%;
+	left: 0;
+    right: 0;
+    margin: auto;
+}
+.button{
+    height: 200px;
+    max-width: 650px;
+    min-width: 400px;
+    width: 60%;
+    background-color: #FAD161;
+    border-radius: 15px;
+    font-size: 80px;
+    color: white;
+    position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+    right: 0;
+    margin: auto;
+}
