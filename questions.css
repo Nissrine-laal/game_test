@@ -26,7 +26,6 @@ body{
     width:100%;
     position: absolute;
     bottom: 0;
-    background-color: black;
     height: 11%;
     margin:0;
 }
@@ -109,7 +108,7 @@ body{
 }
 .fleche{
     position: absolute;
-    bottom: 50;
+    bottom: 30;
     width: 100%;
 }
 .left{
@@ -126,5 +125,15 @@ body{
 }
 .rightt{
     transform: rotate(180deg);
-
+}
+.btn{
+    position: absolute;
+    right: 20px;
+    width: 40%;
+    height: 80%;
+    top: 40px;
+    
+    font-size: 80px;
+    background-color: #FAD161;
+    border-radius: 25px;
 }
