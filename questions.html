@@ -5,8 +5,32 @@
         <link rel="stylesheet" href="questions.css">
     </head>
     <body>
+        <div class="top">
+            <p id="countdown"></p>
+        </div>
+        <div class="questions">
+            <div id="qst1">
+                <div class="qst">
+                    <p class=text>
+                        Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
+                        Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
+                        Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
+                    </p>
+                </div>
+                <div class="choices">
 
-        <p style="font-size: 200px;" id="countdown"></p>
+                </div>
+            </div>
+            <div id="qst2">
+                
+            </div>
+            <div id="qst3">
+                
+            </div>
+        </div>
+        <div class="valider">
+
+        </div>
     </body>
 </html>
 <script>
@@ -15,13 +39,14 @@
     const countdownEl= document.getElementById('countdown');
 
     setInterval(updateCountdown, 1000);
+
      function updateCountdown(){
          const minutes= Math.floor(time/ 60);
          let seconds = time %60;
-
          seconds = seconds < 10 ? '0' + seconds : seconds;
 
          countdownEl.innerHTML=  `${minutes}: ${seconds}`;
+
          time --;
      }
 
