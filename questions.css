@@ -1,10 +1,10 @@
-html, body{
+html body{
     width:100%;
     height:100%;
 }
 .top{
-    min-height :180px;
-    height: 8%;
+    min-height :200px;
+    height: 10%;
     width: 100%;
     background-color: #6BC7A6;
 }
@@ -24,7 +24,7 @@ html, body{
     margin:0;
 }
 .questions{
-    height: 80%;
+    height: 78%;
     width: 100%;
     position: absolute;
 }
@@ -48,7 +48,6 @@ html, body{
 .choices{
     width: 90%;
     height: 55%;
-    background-color: blue;
     border-radius: 20px;
     position: absolute;
 	top:0;
@@ -65,4 +64,39 @@ html, body{
     height: 90%;
     text-align: center;
     overflow-y: scroll;
+}
+.choices_table{
+    width: 100%;
+    height: 90%;
+    position: absolute;
+	top:5%;
+	bottom: 5%;
+	left: 0;
+    right: 0;
+    margin: auto;
+}
+.choices_tr{
+    width: 100%;
+    border-radius: 10px;
+    height: 25%;
+    margin-bottom: 5%;
+}
+.choices_td{
+    width: 100%;
+    border-radius: 100px;
+    height: 28%;
+    background-color: red;
+    margin-bottom: 5%;
+    position: absolute;
+}
+.lab{
+    font-size: 40px;
+    width: 100%;
+    height: 100%;
+    margin: 80px;
+    margin-top: 20px;
+    position: absolute;
+}
+.radio{
+    display: none;
 }
