@@ -109,7 +109,7 @@ body{
 }
 .fleche{
     position: absolute;
-    bottom: 0;
+    bottom: 50;
     width: 100%;
 }
 .left{
@@ -119,4 +119,12 @@ body{
 .right{
     position: absolute;
     right: 0;
+}
+.fl{
+    height: 80px;
+    width: 100px;
+}
+.rightt{
+    transform: rotate(180deg);
+
 }
