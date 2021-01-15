@@ -117,10 +117,9 @@
             </div>
         </div>
         <div class="valider">
-            <a class="btn"> <p class="btn_text">Valider</p></a>
+            <a class="btn" id="myBtn"> <p class="btn_text">Valider</p></a>
         </div>
          <!-- Trigger/Open The Modal -->
-<button id="myBtn">Open Modal</button>
 
 <!-- The Modal -->
 <div id="myModal" class="modal">
@@ -164,6 +163,7 @@ var span = document.getElementsByClassName("close")[0];
 // When the user clicks on the button, open the modal
 btn.onclick = function() {
   modal.style.display = "block";
+  console.log("hey");
 }
 
 // When the user clicks on <span> (x), close the modal
