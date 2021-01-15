@@ -35,7 +35,7 @@ body{
     width: 100%;
     position: absolute;
 }
-#qst1{
+#qst1, #qst2, #qst3{
     height: 100%;
 }
 .qst {
@@ -106,4 +106,17 @@ body{
 }
 .radio{
     display: none;
+}
+.fleche{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.left{
+    position: absolute;
+    left: 0;
+}
+.right{
+    position: absolute;
+    right: 0;
 }
