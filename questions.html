@@ -20,20 +20,20 @@
                 <div class="choices">
                         <table class="choices_table">
                             <tr class="choices_tr">
-                                <td class="choices_td">
-                                    <input class="radio" type="radio" id="choice1" value="choice1">
+                                <td class="choices_td" id="c11_1" style="background-color: white;">
+                                    <input class="radio" onclick="c11_1();" type="radio" id="choice1" value="choice1">
                                     <label class="lab" for="choice1">CHoice 1</label><br>
                                 </td>
                             </tr>
                             <tr class="choices_tr">
-                                <td class="choices_td">
-                                    <input class="radio" type="radio" id="choice2" value="choice2">
+                                <td class="choices_td"  id="c12_1" style="background-color: white;">
+                                    <input class="radio" onclick="c12_1();" type="radio" id="choice2" value="choice2">
                                     <label class="lab" for="choice2">CHoice 2</label><br>
                                 </td>
                             </tr>
                             <tr class="choices_tr">
-                                <td class="choices_td">
-                                    <input class="radio" type="radio" id="choice3" value="choice3">
+                                <td class="choices_td"  id="c13_1" style="background-color: white;">
+                                    <input class="radio" onclick="c13_1();" type="radio" id="choice3" value="choice3">
                                     <label class="lab" for="choice3">CHoice 3</label><br>
                                 </td>
                             </tr>
@@ -51,20 +51,20 @@
                 <div class="choices">
                         <table class="choices_table">
                             <tr class="choices_tr">
-                                <td class="choices_td">
-                                    <input class="radio" type="radio" id="choice1" value="choice1">
+                                <td class="choices_td" id="c21_1" style="background-color: white;">
+                                    <input class="radio" onclick="c21_1();" type="radio" value="choice1">
                                     <label class="lab" for="choice1">CHoice 1</label><br>
                                 </td>
                             </tr>
                             <tr class="choices_tr">
-                                <td class="choices_td">
-                                    <input class="radio" type="radio" id="choice2" value="choice2">
+                                <td class="choices_td"  id="c22_1" style="background-color: white;">
+                                    <input class="radio" onclick="c22_1();" type="radio" id="choice2" value="choice2">
                                     <label class="lab" for="choice2">CHoice 2</label><br>
                                 </td>
                             </tr>
                             <tr class="choices_tr">
-                                <td class="choices_td">
-                                    <input class="radio" type="radio" id="choice3" value="choice3">
+                                <td class="choices_td"  id="c23_1" style="background-color: white;">
+                                    <input class="radio" onclick="c23_1();" type="radio" id="choice3" value="choice3">
                                     <label class="lab" for="choice3">CHoice 3</label><br>
                                 </td>
                             </tr>
@@ -82,20 +82,20 @@
                 <div class="choices">
                         <table class="choices_table">
                             <tr class="choices_tr">
-                                <td class="choices_td">
-                                    <input class="radio" type="radio" id="choice1" value="choice1">
+                                <td class="choices_td" id="c31_1" style="background-color: white;">
+                                    <input class="radio" onclick="c31_1();" type="radio" value="choice1">
                                     <label class="lab" for="choice1">CHoice 1</label><br>
                                 </td>
                             </tr>
                             <tr class="choices_tr">
-                                <td class="choices_td">
-                                    <input class="radio" type="radio" id="choice2" value="choice2">
+                                <td class="choices_td"  id="c32_1" style="background-color: white;">
+                                    <input class="radio" onclick="c32_1();" type="radio" id="choice2" value="choice2">
                                     <label class="lab" for="choice2">CHoice 2</label><br>
                                 </td>
                             </tr>
                             <tr class="choices_tr">
-                                <td class="choices_td">
-                                    <input class="radio" type="radio" id="choice3" value="choice3">
+                                <td class="choices_td"  id="c33_1" style="background-color: white;">
+                                    <input class="radio" onclick="c33_1();" type="radio" id="choice3" value="choice3">
                                     <label class="lab" for="choice3">CHoice 3</label><br>
                                 </td>
                             </tr>
@@ -134,6 +134,52 @@
     </body>
 
 <script>
+    function c11_1(){
+        document.getElementById('c11_1').style.backgroundColor="#f6d2e0";
+        document.getElementById('c12_1').style.backgroundColor="white";
+        document.getElementById('c13_1').style.backgroundColor="white";
+    }
+    function c12_1(){
+        document.getElementById('c12_1').style.backgroundColor="#f6d2e0";
+        document.getElementById('c11_1').style.backgroundColor="white";
+        document.getElementById('c13_1').style.backgroundColor="white";
+    }
+    function c13_1(){
+        document.getElementById('c13_1').style.backgroundColor="#f6d2e0";
+        document.getElementById('c12_1').style.backgroundColor="white";
+        document.getElementById('c11_1').style.backgroundColor="white";
+    }
+    function c21_1(){
+        document.getElementById('c21_1').style.backgroundColor="#f6d2e0";
+        document.getElementById('c22_1').style.backgroundColor="white";
+        document.getElementById('c23_1').style.backgroundColor="white";
+    }
+    function c22_1(){
+        document.getElementById('c22_1').style.backgroundColor="#f6d2e0";
+        document.getElementById('c21_1').style.backgroundColor="white";
+        document.getElementById('c23_1').style.backgroundColor="white";
+    }
+    function c23_1(){
+        document.getElementById('c23_1').style.backgroundColor="#f6d2e0";
+        document.getElementById('c22_1').style.backgroundColor="white";
+        document.getElementById('c21_1').style.backgroundColor="white";
+    }
+
+    function c31_1(){
+        document.getElementById('c31_1').style.backgroundColor="#f6d2e0";
+        document.getElementById('c32_1').style.backgroundColor="white";
+        document.getElementById('c33_1').style.backgroundColor="white";
+    }
+    function c32_1(){
+        document.getElementById('c32_1').style.backgroundColor="#f6d2e0";
+        document.getElementById('c31_1').style.backgroundColor="white";
+        document.getElementById('c33_1').style.backgroundColor="white";
+    }
+    function c33_1(){
+        document.getElementById('c33_1').style.backgroundColor="#f6d2e0";
+        document.getElementById('c32_1').style.backgroundColor="white";
+        document.getElementById('c31_1').style.backgroundColor="white";
+    }
     const startingMinutes = 60;
     let time = startingMinutes * 60;
     const countdownEl= document.getElementById('countdown');
