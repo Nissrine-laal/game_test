@@ -8,7 +8,7 @@
         <div class="top">
             <p id="countdown"></p>
         </div>
-        <div class="questions">
+        <div class="questions" id="q1" style="display: block;">
             <div id="qst1" style="display: block;">
                 <div class="qst">
                     <p class=text>
@@ -127,7 +127,7 @@
   <!-- Modal content -->
   <div class="modal-content">
     <p> 80% <br> Votre indication est : x <br> Entrez le code de 4 chiffres pour accéder aux prochaines questions</p>
-    <input type="text" placeholder="0000" id="code1">
+    <input type="text" placeholder="0000" id="code1" onkeyup="code();">
   </div>
 
 </div> 
@@ -183,6 +183,8 @@
         document.getElementById('c32_1').style.backgroundColor="white";
         document.getElementById('c31_1').style.backgroundColor="white";
     }
+</script>
+<script>
     const startingMinutes = 60;
     let time = startingMinutes * 60;
     const countdownEl= document.getElementById('countdown');
@@ -204,6 +206,13 @@
          }
      }
 
+     function code(){
+         var code_entre= parseInt(document.getElementById('code1').value);
+         if(code_entre==1234){
+            document.getElementById('q1').style.display="none";
+            document.getElementById('myModal').style.display="none";
+         }
+     }
      function switch_page_right(){
         if ( document.getElementById('qst1').style.display=="block"){
             document.getElementById('qst1').style.display="none";

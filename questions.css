@@ -139,8 +139,9 @@ body{
     height: 80%;
     top: 50px;
     text-decoration: none;
-    background-color: #FAD161;
+    background-color: #0671b7;
     border-radius: 25px;
+    color: white;
 }
 .btn_text{
     font-size: 80px;
