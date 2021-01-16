@@ -170,16 +170,9 @@ body{
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
     height: 60%;
-    font-size: 40px;
+    font-size: 80px;
   }
-  
-  /* The Close Button */
-  .close {
-    color: #aaa;
-    float: right;
-    font-size:100px;
-    font-weight: bold;
-  }
+ 
   
   .close:hover,
   .close:focus {
@@ -188,3 +181,14 @@ body{
     cursor: pointer;
   } 
 
+#code1{
+    width : 80%;
+    font-size: 120px;
+    height: 170px;
+    outline: black;
+    border: 1px solid black;
+    border-radius: 20px;
+    position: absolute;
+    left: 10%;
+    right: 10%;
+}
