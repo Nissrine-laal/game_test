@@ -52,20 +52,20 @@
                         <table class="choices_table">
                             <tr class="choices_tr">
                                 <td class="choices_td" id="c21_1" style="background-color: white;">
-                                    <input class="radio" onclick="c21_1();" type="radio" value="choice1">
-                                    <label class="lab" for="choice1">CHoice 1</label><br>
+                                    <input class="radio" onclick="c21_1();" type="radio" id="choice12" value="choice12">
+                                    <label class="lab" for="choice12">CHoice 1</label><br>
                                 </td>
                             </tr>
                             <tr class="choices_tr">
                                 <td class="choices_td"  id="c22_1" style="background-color: white;">
-                                    <input class="radio" onclick="c22_1();" type="radio" id="choice2" value="choice2">
-                                    <label class="lab" for="choice2">CHoice 2</label><br>
+                                    <input class="radio" onclick="c22_1();" type="radio" id="choice22" value="choice2">
+                                    <label class="lab" for="choice22">CHoice 2</label><br>
                                 </td>
                             </tr>
                             <tr class="choices_tr">
                                 <td class="choices_td"  id="c23_1" style="background-color: white;">
-                                    <input class="radio" onclick="c23_1();" type="radio" id="choice3" value="choice3">
-                                    <label class="lab" for="choice3">CHoice 3</label><br>
+                                    <input class="radio" onclick="c23_1();" type="radio" id="choice32" value="choice3">
+                                    <label class="lab" for="choice32">CHoice 3</label><br>
                                 </td>
                             </tr>
                         </table>
@@ -83,20 +83,20 @@
                         <table class="choices_table">
                             <tr class="choices_tr">
                                 <td class="choices_td" id="c31_1" style="background-color: white;">
-                                    <input class="radio" onclick="c31_1();" type="radio" value="choice1">
-                                    <label class="lab" for="choice1">CHoice 1</label><br>
+                                    <input class="radio" onclick="c31_1();" type="radio" id="choice13" value="choice13">
+                                    <label class="lab" for="choice13">CHoice 1</label><br>
                                 </td>
                             </tr>
                             <tr class="choices_tr">
                                 <td class="choices_td"  id="c32_1" style="background-color: white;">
-                                    <input class="radio" onclick="c32_1();" type="radio" id="choice2" value="choice2">
-                                    <label class="lab" for="choice2">CHoice 2</label><br>
+                                    <input class="radio" onclick="c32_1();" type="radio" id="choice23" value="choice2">
+                                    <label class="lab" for="choice23">CHoice 2</label><br>
                                 </td>
                             </tr>
                             <tr class="choices_tr">
                                 <td class="choices_td"  id="c33_1" style="background-color: white;">
-                                    <input class="radio" onclick="c33_1();" type="radio" id="choice3" value="choice3">
-                                    <label class="lab" for="choice3">CHoice 3</label><br>
+                                    <input class="radio" onclick="c33_1();" type="radio" id="choice33" value="choice3">
+                                    <label class="lab" for="choice33">CHoice 3</label><br>
                                 </td>
                             </tr>
                         </table>
@@ -138,6 +138,7 @@
         document.getElementById('c11_1').style.backgroundColor="#f6d2e0";
         document.getElementById('c12_1').style.backgroundColor="white";
         document.getElementById('c13_1').style.backgroundColor="white";
+        console.log("c11_1");
     }
     function c12_1(){
         document.getElementById('c12_1').style.backgroundColor="#f6d2e0";
@@ -150,6 +151,8 @@
         document.getElementById('c11_1').style.backgroundColor="white";
     }
     function c21_1(){
+        console.log("c_1");
+
         document.getElementById('c21_1').style.backgroundColor="#f6d2e0";
         document.getElementById('c22_1').style.backgroundColor="white";
         document.getElementById('c23_1').style.backgroundColor="white";
