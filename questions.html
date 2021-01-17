@@ -117,7 +117,7 @@
             <div id="myModal" class="modal">
 
             <div class="modal-content">
-                <p> 80% <br> Votre indication est : <br>M---- d- -a ------ <br> Entrez le code de 4 chiffres pour accéder aux prochaines questions</p>
+                <p> <p id="score1"></p>  Votre indication est : <br>M---- d- -a ------ <br> Entrez le code de 4 chiffres pour accéder aux prochaines questions</p>
                 <input type="text" placeholder="0000" id="code1" onkeyup="code();">
             </div>
 
@@ -234,7 +234,7 @@
             <div id="myModal2" class="modal">
     
                 <div class="modal-content">
-                    <p> 50% <br> Votre indication est :<br> ----e -- -- --ri-- <br> Entrez le code de 4 chiffres pour accéder aux prochaines questions</p>
+                    <p> <p id="score2"></p>  Votre indication est :<br> ----e -- -- --ri-- <br> Entrez le code de 4 chiffres pour accéder aux prochaines questions</p>
                     <input type="text" placeholder="0000" id="code2" onkeyup="code2();">
                 </div>
     
@@ -350,7 +350,7 @@
             <div id="myModal3" class="modal">
     
                 <div class="modal-content">
-                    <p> 50% <br> Votre indication est : <br>-us-- -e -- ------ <br> Entrez le code de 4 chiffres pour accéder aux prochaines questions</p>
+                    <p> <p id="score3"></p>  Votre indication est : <br>-us-- -e -- ------ <br> Entrez le code de 4 chiffres pour accéder aux prochaines questions</p>
                     <input type="text" placeholder="0000" id="code3" onkeyup="code3();">
                 </div>
     
@@ -472,7 +472,7 @@
             <div id="myModal4" class="modal">
     
                 <div class="modal-content">
-                    <p> 50% <br> Votre indication est :<br>----- -- l- -a---e <br> Entrez le code de 4 chiffres pour accéder aux prochaines questions</p>
+                    <p> <p id="score4"></p>  Votre indication est :<br>----- -- l- -a---e <br> Entrez le code de 4 chiffres pour accéder aux prochaines questions</p>
                     <input type="text" placeholder="0000" id="code4" onkeyup="code4();">
                 </div>
     
@@ -592,7 +592,7 @@
             <div id="myModal5" class="modal">
     
                 <div class="modal-content">
-                    <p> 50% <br> Votre indication est :<br> ---é- -- -- m---n- <br> Entrez le nom du monument que vous avez rassemblé </p>
+                    <p> <p id="score5"></p>  Votre indication est :<br> ---é- -- -- m---n- <br> Entrez le nom du monument que vous avez rassemblé </p>
                     <input type="text" placeholder="xxxxxxxxxxxx" id="code5" onkeyup="code5();">
                     <p id="won" style="display: none; color: green; font-size: 100px; margin-top: 300px;"> Vous avez gagné !</p>
                 </div>
@@ -1154,6 +1154,7 @@
 </script>
 <!--modal-->
 <script>
+    var score=100;
 var modal = document.getElementById("myModal");
 
 var btn = document.getElementById("myBtn");
@@ -1163,14 +1164,19 @@ var span = document.getElementsByClassName("close")[0];
 btn.onclick = function() {
     modal.style.display = "block";
         if(answer1!=2){
-            time-=10;   
+            time-=10;
+            score-=33;   
         }
         if(answer2!=1){
-            time-=10;   
+            time-=10;  
+            score-=33;  
         }
         if(answer3!=1){
-            time-=10;   
+            time-=10; 
+            score-=33;   
         }
+    document.getElementById('score1').innerHTML=score+ "%";
+    score=100;
 }
 
 var modal2 = document.getElementById("myModal2");
@@ -1182,15 +1188,20 @@ var span2 = document.getElementsByClassName("close")[0];
 btn2.onclick = function() {
     modal2.style.display = "block";
         if(answer1!=1){
-            time-=10;   
+            time-=10; 
+            score-=33;    
         }
         //idk
         if(answer2!=1){
-            time-=10;   
+            time-=10; 
+            score-=33;    
         }
         if(answer3!=3){
-            time-=10;   
+            time-=10;
+            score-=33;     
         }
+        document.getElementById('score2').innerHTML=score+ "%";
+        score=100;
 }
 
 var modal3 = document.getElementById("myModal3");
@@ -1202,14 +1213,19 @@ var span3 = document.getElementsByClassName("close")[0];
 btn3.onclick = function() {
     modal3.style.display = "block";
         if(answer1!=2){
-            time-=10;   
+            time-=10;  
+            score-=33;      
         }
         if(answer2!=2){
-            time-=10;   
+            time-=10; 
+            score-=33;   
         }
         if(answer3!=2){
-            time-=10;   
+            time-=10;
+            score-=33;    
         }
+        document.getElementById('score3').innerHTML=score+ "%";
+        score=100;
 }
 
 var modal4 = document.getElementById("myModal4");
@@ -1221,14 +1237,19 @@ var span4 = document.getElementsByClassName("close")[0];
 btn4.onclick = function() {
     modal4.style.display = "block";
         if(answer1!=3){
-            time-=10;   
+            time-=10;
+            score-=33;      
         }
         if(answer2!=1){
-            time-=10;   
+            time-=10;
+            score-=33;   
         }
         if(answer3!=3){
-            time-=10;   
+            time-=10;
+            score-=33;   
         }
+        document.getElementById('score4').innerHTML=score+ "%";
+        score=100;
 }
 
 var modal5 = document.getElementById("myModal5");
@@ -1240,14 +1261,19 @@ var span5 = document.getElementsByClassName("close")[0];
 btn5.onclick = function() {
     modal5.style.display = "block";
         if(answer1!=1){
-            time-=10;   
+            time-=10; 
+            score-=33;    
         }
         if(answer2!=2){
-            time-=10;   
+            time-=10; 
+            score-=33;    
         }
         if(answer3!=1){
-            time-=10;   
+            time-=10; 
+            score-=33;    
         }
+        document.getElementById('score5').innerHTML=score+ "%";
+        score=100;
 }
 </script>
 </html>
