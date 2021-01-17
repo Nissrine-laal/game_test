@@ -8,137 +8,596 @@
         <div class="top">
             <p id="countdown"></p>
         </div>
-        <div class="questions" id="q1" style="display: block;">
-            <div id="qst1" style="display: block;">
-                <div class="qst">
-                    <p class=text>
-                        1- Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
-                        Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
-                        Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
-                    </p>
+        <div id="part1">
+            <div class="questions" style="display: block;">
+                <div id="qst1" style="display: block;">
+                    <div class="qst">
+                        <p class=text>
+                            Pendant la Seconde Guerre mondiale, il connut au milieu de la nuit du 9 septembre 1944 une terrible explosion qui fit des centaines de morts. Aujourd’hui, lieu d’expositions et de mémoire, il permet de découvrir l’histoire de la ville pendant le second conflit mondial ainsi que la vie quotidienne des populations civiles.</p>
+                    </div>
+                    <div class="choices">
+                            <table class="choices_table">
+                                <tr class="choices_tr">
+                                    <td class="choices_td" id="c11_1" style="background-color: white;">
+                                        <input class="radio" onclick="c11_1();" type="radio" id="choice1" value="choice1">
+                                        <label class="lab" for="choice1">Château </label><br>
+                                    </td>
+                                </tr>
+                                <tr class="choices_tr">
+                                    <td class="choices_td"  id="c12_1" style="background-color: white;">
+                                        <input class="radio" onclick="c12_1();" type="radio" id="choice2" value="choice2">
+                                        <label class="lab" for="choice2">L'arbi sidi carnot</label><br>
+                                    </td>
+                                </tr>
+                                <tr class="choices_tr">
+                                    <td class="choices_td"  id="c13_1" style="background-color: white;">
+                                        <input class="radio" onclick="c13_1();" type="radio" id="choice3" value="choice3">
+                                        <label class="lab" for="choice3">La marine</label><br>
+                                    </td>
+                                </tr>
+                            </table>
+                    </div>
                 </div>
-                <div class="choices">
-                        <table class="choices_table">
-                            <tr class="choices_tr">
-                                <td class="choices_td" id="c11_1" style="background-color: white;">
-                                    <input class="radio" onclick="c11_1();" type="radio" id="choice1" value="choice1">
-                                    <label class="lab" for="choice1">CHoice 1</label><br>
-                                </td>
-                            </tr>
-                            <tr class="choices_tr">
-                                <td class="choices_td"  id="c12_1" style="background-color: white;">
-                                    <input class="radio" onclick="c12_1();" type="radio" id="choice2" value="choice2">
-                                    <label class="lab" for="choice2">CHoice 2</label><br>
-                                </td>
-                            </tr>
-                            <tr class="choices_tr">
-                                <td class="choices_td"  id="c13_1" style="background-color: white;">
-                                    <input class="radio" onclick="c13_1();" type="radio" id="choice3" value="choice3">
-                                    <label class="lab" for="choice3">CHoice 3</label><br>
-                                </td>
-                            </tr>
-                        </table>
+                <div id="qst2" style="display: none;">
+                    <div class="qst">
+                        <p class=text>
+                            Bâtie au XIVe siècle, il occupe une situation privilégiée sur la rive droite de la Penfeld, face au château de Brest, au pied du pont de Recouvrance. Elle abrite les dioramas de Jim Sévellec, véritables reconstitutions historiques du Brest d’avant 1939.
+                        </p>
+                    </div>
+                    <div class="choices">
+                            <table class="choices_table">
+                                <tr class="choices_tr">
+                                    <td class="choices_td" id="c21_1" style="background-color: white;">
+                                        <input class="radio" onclick="c21_1();" type="radio" id="choice12" value="choice12">
+                                        <label class="lab" for="choice12">Tour Tanguy</label><br>
+                                    </td>
+                                </tr>
+                                <tr class="choices_tr">
+                                    <td class="choices_td"  id="c22_1" style="background-color: white;">
+                                        <input class="radio" onclick="c22_1();" type="radio" id="choice22" value="choice2">
+                                        <label class="lab" for="choice22">Le quartz</label><br>
+                                    </td>
+                                </tr>
+                                <tr class="choices_tr">
+                                    <td class="choices_td"  id="c23_1" style="background-color: white;">
+                                        <input class="radio" onclick="c23_1();" type="radio" id="choice32" value="choice3">
+                                        <label class="lab" for="choice32">Le Marc Orlan</label><br>
+                                    </td>
+                                </tr>
+                            </table>
+                    </div>
+                </div>
+                <div id="qst3" style="display: none;">
+                    <div class="qst">
+                        <p class=text>
+                            Située en plein cœur du quartier brestois de Recouvrance et surplombant la Penfeld, elle est l’un des vestiges du vieux Brest. Une imposante fontaine accolée à l’établissement, réalisée sous le mandat de Jean-Pierre Leuven en 1760 et remise en eau en 1992, vient compléter cet ensemble patrimonial pittoresque. Ce lieu municipal accueille des expositions d’arts plastiques, à savoir du dessin, de la peinture, de la sculpture, de la photographie, de la vidéo ou encore des installations.
+                        </p>
+                    </div>
+                    <div class="choices">
+                            <table class="choices_table">
+                                <tr class="choices_tr">
+                                    <td class="choices_td" id="c31_1" style="background-color: white;">
+                                        <input class="radio" onclick="c31_1();" type="radio" id="choice13" value="choice13">
+                                        <label class="lab" for="choice13">La maison de la fontaine</label><br>
+                                    </td>
+                                </tr>
+                                <tr class="choices_tr">
+                                    <td class="choices_td"  id="c32_1" style="background-color: white;">
+                                        <input class="radio" onclick="c32_1();" type="radio" id="choice23" value="choice2">
+                                        <label class="lab" for="choice23">La cinématique de Bretagne</label><br>
+                                    </td>
+                                </tr>
+                                <tr class="choices_tr">
+                                    <td class="choices_td"  id="c33_1" style="background-color: white;">
+                                        <input class="radio" onclick="c33_1();" type="radio" id="choice33" value="choice3">
+                                        <label class="lab" for="choice33">Océonpolis</label><br>
+                                    </td>
+                                </tr>
+                            </table>
+                    </div>
+                </div>
+                <div class="fleche">
+                    
+                <table style="width: 100%; height: 50px;" >
+                    <tr style="width:100%; height: 100%;">
+                        <td class="left">
+                            <img class="fl" src="left.png" onclick="switch_page_left();" id="l" style="opacity:0.5;">
+                        </td>
+                        <td class="right">
+                            <img class="fl rightt" src="left.png" onclick="switch_page_right();" id="r" style="opacity:1;">
+                        </td>
+                    </tr>
+                </table>
                 </div>
             </div>
-            <div id="qst2" style="display: none;">
-                <div class="qst">
-                    <p class=text>
-                        2 - Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
-                        Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
-                        Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
-                    </p>
-                </div>
-                <div class="choices">
-                        <table class="choices_table">
-                            <tr class="choices_tr">
-                                <td class="choices_td" id="c21_1" style="background-color: white;">
-                                    <input class="radio" onclick="c21_1();" type="radio" id="choice12" value="choice12">
-                                    <label class="lab" for="choice12">CHoice 1</label><br>
-                                </td>
-                            </tr>
-                            <tr class="choices_tr">
-                                <td class="choices_td"  id="c22_1" style="background-color: white;">
-                                    <input class="radio" onclick="c22_1();" type="radio" id="choice22" value="choice2">
-                                    <label class="lab" for="choice22">CHoice 2</label><br>
-                                </td>
-                            </tr>
-                            <tr class="choices_tr">
-                                <td class="choices_td"  id="c23_1" style="background-color: white;">
-                                    <input class="radio" onclick="c23_1();" type="radio" id="choice32" value="choice3">
-                                    <label class="lab" for="choice32">CHoice 3</label><br>
-                                </td>
-                            </tr>
-                        </table>
-                </div>
+            <div class="valider">
+                <a class="btn" id="myBtn"> <p class="btn_text">Valider</p></a>
             </div>
-            <div id="qst3" style="display: none;">
-                <div class="qst">
-                    <p class=text>
-                        3 Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
-                        Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
-                        Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
-                    </p>
-                </div>
-                <div class="choices">
-                        <table class="choices_table">
-                            <tr class="choices_tr">
-                                <td class="choices_td" id="c31_1" style="background-color: white;">
-                                    <input class="radio" onclick="c31_1();" type="radio" id="choice13" value="choice13">
-                                    <label class="lab" for="choice13">CHoice 1</label><br>
-                                </td>
-                            </tr>
-                            <tr class="choices_tr">
-                                <td class="choices_td"  id="c32_1" style="background-color: white;">
-                                    <input class="radio" onclick="c32_1();" type="radio" id="choice23" value="choice2">
-                                    <label class="lab" for="choice23">CHoice 2</label><br>
-                                </td>
-                            </tr>
-                            <tr class="choices_tr">
-                                <td class="choices_td"  id="c33_1" style="background-color: white;">
-                                    <input class="radio" onclick="c33_1();" type="radio" id="choice33" value="choice3">
-                                    <label class="lab" for="choice33">CHoice 3</label><br>
-                                </td>
-                            </tr>
-                        </table>
-                </div>
+
+            <div id="myModal" class="modal">
+
+            <div class="modal-content">
+                <p> 80% <br> Votre indication est : x <br> Entrez le code de 4 chiffres pour accéder aux prochaines questions</p>
+                <input type="text" placeholder="0000" id="code1" onkeyup="code();">
             </div>
-            <div class="fleche">
-                
-            <table style="width: 100%; height: 50px;" >
-                <tr style="width:100%; height: 100%;">
-                    <td class="left">
-                        <img class="fl" src="left.png" onclick="switch_page_left();" id="l" style="opacity:0.5;">
-                    </td>
-                    <td class="right">
-                        <img class="fl rightt" src="left.png" onclick="switch_page_right();" id="r" style="opacity:1;">
-                    </td>
-                </tr>
-            </table>
-            </div>
+
+            </div> 
         </div>
-        <div class="valider">
-            <a class="btn" id="myBtn"> <p class="btn_text">Valider</p></a>
+        <div id="part2" style="display: none;">
+            <div class="questions" style="display: block;">
+                <div id="qst1_2" style="display: block;">
+                    <div class="qst">
+                        <p class=text>
+                            Situé dans la galerie du Quartz, scène nationale de Brest, Le Cap encourage la création photographique par l'exposition, l'aide à la création et la pédagogie de l'image. 
+                            <br>Il est créé en en 1996 à l'initiative d'un groupe de photographes brestois. 
+                        </p>
+                        </div>
+                    <div class="choices">
+                            <table class="choices_table">
+                                <tr class="choices_tr">
+                                    <td class="choices_td" id="c11_2" style="background-color: white;">
+                                        <input class="radio" onclick="c11_2();" type="radio" id="choice12_2" value="choice1">
+                                        <label class="lab" for="choice12_2">Le centre atlantique de la photographie  </label><br>
+                                    </td>
+                                </tr>
+                                <tr class="choices_tr">
+                                    <td class="choices_td"  id="c12_2" style="background-color: white;">
+                                        <input class="radio" onclick="c12_2();" type="radio" id="choice22_2" value="choice2">
+                                        <label class="lab" for="choice22_2">L’Avel vor </label><br>
+                                    </td>
+                                </tr>
+                                <tr class="choices_tr">
+                                    <td class="choices_td"  id="c13_2" style="background-color: white;">
+                                        <input class="radio" onclick="c13_2();" type="radio" id="choice32_2" value="choice3">
+                                        <label class="lab" for="choice32_2">La Stella , maison de théâtre </label><br>
+                                    </td>
+                                </tr>
+                            </table>
+                    </div>
+                </div>
+                <div id="qst2_2" style="display: none;">
+                    <div class="qst">
+                        <p class=text>
+                            Un parc de découverte des océans, raconte l’histoire naturelle des océans vue par les scientifiques et expliquée au grand public. Avec plus de 10 millions de visiteurs depuis sa création en 1990, c’est le site touristique payant le plus fréquenté de Bretagne
+                        </p>
+                    </div>
+                    <div class="choices">
+                            <table class="choices_table">
+                                <tr class="choices_tr">
+                                    <td class="choices_td" id="c21_2" style="background-color: white;">
+                                        <input class="radio" onclick="c21_2();" type="radio" id="choice122" value="choice12">
+                                        <label class="lab" for="choice122">L’Océanopolie </label><br>
+                                    </td>
+                                </tr>
+                                <tr class="choices_tr">
+                                    <td class="choices_td"  id="c22_2" style="background-color: white;">
+                                        <input class="radio" onclick="c22_2();" type="radio" id="choice222" value="choice2">
+                                        <label class="lab" for="choice222">La Marine </label><br>
+                                    </td>
+                                </tr>
+                                <tr class="choices_tr">
+                                    <td class="choices_td"  id="c23_2" style="background-color: white;">
+                                        <input class="radio" onclick="c23_2();" type="radio" id="choice322" value="choice3">
+                                        <label class="lab" for="choice322">La Carène </label><br>
+                                    </td>
+                                </tr>
+                            </table>
+                    </div>
+                </div>
+                <div id="qst3_2" style="display: none;">
+                    <div class="qst">
+                        <p class=text>
+                            Située non loin de l’Océanopolis, Si elle est déconseillée à la baignade, c’est tout de même un endroit charmant et apprécié des brestois. Vaste donnant sur un port, connue pour ses sports nautiques et son grand aquarium.
+                        </p>
+                    </div>
+                    <div class="choices">
+                            <table class="choices_table">
+                                <tr class="choices_tr">
+                                    <td class="choices_td" id="c31_2" style="background-color: white;">
+                                        <input class="radio" onclick="c31_2();" type="radio" id="choice132" value="choice13">
+                                        <label class="lab" for="choice132">Plage Sainte-Marguerite</label><br>
+                                    </td>
+                                </tr>
+                                <tr class="choices_tr">
+                                    <td class="choices_td"  id="c32_2" style="background-color: white;">
+                                        <input class="radio" onclick="c32_2();" type="radio" id="choice232" value="choice2">
+                                        <label class="lab" for="choice232">Plage de Trez-Hir</label><br>
+                                    </td>
+                                </tr>
+                                <tr class="choices_tr">
+                                    <td class="choices_td"  id="c33_2" style="background-color: white;">
+                                        <input class="radio" onclick="c33_2();" type="radio" id="choice332" value="choice3">
+                                        <label class="lab" for="choice332">Plage du Moulin Blanc</label><br>
+                                    </td>
+                                </tr>
+                            </table>
+                    </div>
+                </div>
+                <div class="fleche">
+                    
+                <table style="width: 100%; height: 50px;" >
+                    <tr style="width:100%; height: 100%;">
+                        <td class="left">
+                            <img class="fl" src="left.png" onclick="switch_page_left2();" id="l2" style="opacity:0.5;">
+                        </td>
+                        <td class="right">
+                            <img class="fl rightt" src="left.png" onclick="switch_page_right2();" id="r2" style="opacity:1;">
+                        </td>
+                    </tr>
+                </table>
+                </div>
+            </div>
+            <div class="valider">
+                <a class="btn" id="myBtn2"> <p class="btn_text">Valider</p></a>
+            </div>
+    
+            <div id="myModal2" class="modal">
+    
+                <div class="modal-content">
+                    <p> 50% <br> Votre indication est : x <br> Entrez le code de 4 chiffres pour accéder aux prochaines questions</p>
+                    <input type="text" placeholder="0000" id="code2" onkeyup="code2();">
+                </div>
+    
+            </div> 
         </div>
-         <!-- Trigger/Open The Modal -->
-
-<!-- The Modal -->
-<div id="myModal" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <p> 80% <br> Votre indication est : x <br> Entrez le code de 4 chiffres pour accéder aux prochaines questions</p>
-    <input type="text" placeholder="0000" id="code1" onkeyup="code();">
-  </div>
-
-</div> 
+        <div id="part3" style="display: none;">
+            <div class="questions" style="display: block;">
+                <div id="qst1_3" style="display: block;">
+                    <div class="qst">
+                        <p class=text>
+                            Lieu dans lequel sont collectés, conservés et exposés des objets dans un souci d’enseignement et de culture en Brest, ses collections ont été recréées après la Seconde Guerre mondiale,  il été détruit à l'instar de la plus grande partie de la ville lors de son bombardement par les forces alliées. 
+                        </p>
+                        </div>
+                    <div class="choices">
+                            <table class="choices_table">
+                                <tr class="choices_tr">
+                                    <td class="choices_td" id="c11_3" style="background-color: white;">
+                                        <input class="radio" onclick="c11_3();" type="radio" id="choice12_3" value="choice1">
+                                        <label class="lab" for="choice12_3">Conservatoire botanique national  </label><br>
+                                    </td>
+                                </tr>
+                                <tr class="choices_tr">
+                                    <td class="choices_td"  id="c12_3" style="background-color: white;">
+                                        <input class="radio" onclick="c12_3();" type="radio" id="choice22_3" value="choice2">
+                                        <label class="lab" for="choice22_3">Musée des Beaux-Arts</label><br>
+                                    </td>
+                                </tr>
+                                <tr class="choices_tr">
+                                    <td class="choices_td"  id="c13_3" style="background-color: white;">
+                                        <input class="radio" onclick="c13_3();" type="radio" id="choice32_3" value="choice3">
+                                        <label class="lab" for="choice32_3">Tour de la Motte-Tanguy </label><br>
+                                    </td>
+                                </tr>
+                            </table>
+                    </div>
+                </div>
+                <div id="qst2_3" style="display: none;">
+                    <div class="qst">
+                        <p class=text>
+                            C’est un monument de style moderne érigé pendant la reconstruction de Brest,L’ancienne  fut construite à partir de 1686, L'église est consacrée à un roi de France.
+                        </p>
+                    </div>
+                    <div class="choices">
+                            <table class="choices_table">
+                                <tr class="choices_tr">
+                                    <td class="choices_td" id="c21_3" style="background-color: white;">
+                                        <input class="radio" onclick="c21_3();" type="radio" id="choice122_3" value="choice12">
+                                        <label class="lab" for="choice122_3">Église Saint-Michel </label><br>
+                                    </td>
+                                </tr>
+                                <tr class="choices_tr">
+                                    <td class="choices_td"  id="c22_3" style="background-color: white;">
+                                        <input class="radio" onclick="c22_3();" type="radio" id="choice222_3" value="choice2">
+                                        <label class="lab" for="choice222_3">Église Saint-Louis</label><br>
+                                    </td>
+                                </tr>
+                                <tr class="choices_tr">
+                                    <td class="choices_td"  id="c23_3" style="background-color: white;">
+                                        <input class="radio" onclick="c23_3();" type="radio" id="choice322_3" value="choice3">
+                                        <label class="lab" for="choice322_3">Église Saint-Luc </label><br>
+                                    </td>
+                                </tr>
+                            </table>
+                    </div>
+                </div>
+                <div id="qst3_3" style="display: none;">
+                    <div class="qst">
+                        <p class=text>
+                            Établissement public, scientifique et technique, Créé en 1975, il fut le premier établissement au monde entièrement consacré au sauvetage des espèces menacées, il travaille pour préserver la diversité végétale sauvage de l’ouest de la France et des hauts lieux de biodiversité mondiaux.
+                        </p>
+                    </div>
+                    <div class="choices">
+                            <table class="choices_table">
+                                <tr class="choices_tr">
+                                    <td class="choices_td" id="c31_3" style="background-color: white;">
+                                        <input class="radio" onclick="c31_3();" type="radio" id="choice132_3" value="choice13">
+                                        <label class="lab" for="choice132_3">Musée des Beaux-Arts</label><br>
+                                    </td>
+                                </tr>
+                                <tr class="choices_tr">
+                                    <td class="choices_td"  id="c32_3" style="background-color: white;">
+                                        <input class="radio" onclick="c32_3();" type="radio" id="choice232_3" value="choice2">
+                                        <label class="lab" for="choice232_3">Conservatoire botanique national</label><br>
+                                    </td>
+                                </tr>
+                                <tr class="choices_tr">
+                                    <td class="choices_td"  id="c33_3" style="background-color: white;">
+                                        <input class="radio" onclick="c33_3();" type="radio" id="choice332_3" value="choice3">
+                                        <label class="lab" for="choice332_3">Musée National de la Marine</label><br>
+                                    </td>
+                                </tr>
+                            </table>
+                    </div>
+                </div>
+                <div class="fleche">
+                    
+                <table style="width: 100%; height: 50px;" >
+                    <tr style="width:100%; height: 100%;">
+                        <td class="left">
+                            <img class="fl" src="left.png" onclick="switch_page_left3();" id="l3" style="opacity:0.5;">
+                        </td>
+                        <td class="right">
+                            <img class="fl rightt" src="left.png" onclick="switch_page_right3();" id="r3" style="opacity:1;">
+                        </td>
+                    </tr>
+                </table>
+                </div>
+            </div>
+            <div class="valider">
+                <a class="btn" id="myBtn3"> <p class="btn_text">Valider</p></a>
+            </div>
+    
+            <div id="myModal3" class="modal">
+    
+                <div class="modal-content">
+                    <p> 50% <br> Votre indication est : x <br> Entrez le code de 4 chiffres pour accéder aux prochaines questions</p>
+                    <input type="text" placeholder="0000" id="code3" onkeyup="code3();">
+                </div>
+    
+            </div> 
+        </div>
+        <div id="part4" style="display: none;">
+            <div class="questions" style="display: block;">
+                <div id="qst1_4" style="display: block;">
+                    <div class="qst">
+                        <p class=text>
+                            C’est un ouvrage fortifié, construit entre 1777 et 1784 à l'ouest de Brest. Utilisé pendant la Deuxième guerre mondiale par les troupes allemandes, il est aujourd'hui un mémorial-musée consacré au Finistère pendant ce conflit.
+                        </p>
+                    </div>
+                    <div class="choices">
+                            <table class="choices_table">
+                                <tr class="choices_tr">
+                                    <td class="choices_td" id="c11_4" style="background-color: white;">
+                                        <input class="radio" onclick="c11_4();" type="radio" id="choice12_4" value="choice1">
+                                        <label class="lab" for="choice12_4">Port de Brest  </label><br>
+                                    </td>
+                                </tr>
+                                <tr class="choices_tr">
+                                    <td class="choices_td"  id="c12_4" style="background-color: white;">
+                                        <input class="radio" onclick="c12_4();" type="radio" id="choice22_4" value="choice2">
+                                        <label class="lab" for="choice22_4">Fort Montebarey</label><br>
+                                    </td>
+                                </tr>
+                                <tr class="choices_tr">
+                                    <td class="choices_td"  id="c13_4" style="background-color: white;">
+                                        <input class="radio" onclick="c13_4();" type="radio" id="choice32_4" value="choice3">
+                                        <label class="lab" for="choice32_4">Oceanopolis </label><br>
+                                    </td>
+                                </tr>
+                            </table>
+                    </div>
+                </div>
+                <div id="qst2_4" style="display: none;">
+                    <div class="qst">
+                        <p class=text>
+                            qstn 1 karima
+                        </p>
+                    </div>
+                    <div class="choices">
+                            <table class="choices_table">
+                                <tr class="choices_tr">
+                                    <td class="choices_td" id="c21_4" style="background-color: white;">
+                                        <input class="radio" onclick="c21_4();" type="radio" id="choice122_4" value="choice12">
+                                        <label class="lab" for="choice122_4">Église Saint-Michel </label><br>
+                                    </td>
+                                </tr>
+                                <tr class="choices_tr">
+                                    <td class="choices_td"  id="c22_4" style="background-color: white;">
+                                        <input class="radio" onclick="c22_4();" type="radio" id="choice222_4" value="choice2">
+                                        <label class="lab" for="choice222_4">Église Saint-Louis</label><br>
+                                    </td>
+                                </tr>
+                                <tr class="choices_tr">
+                                    <td class="choices_td"  id="c23_4" style="background-color: white;">
+                                        <input class="radio" onclick="c23_4();" type="radio" id="choice322_4" value="choice3">
+                                        <label class="lab" for="choice322_4">Église Saint-Luc </label><br>
+                                    </td>
+                                </tr>
+                            </table>
+                    </div>
+                </div>
+                <div id="qst3_4" style="display: none;">
+                    <div class="qst">
+                        <p class=text>
+                        qs2
+                        </p>
+                    </div>
+                    <div class="choices">
+                            <table class="choices_table">
+                                <tr class="choices_tr">
+                                    <td class="choices_td" id="c31_4" style="background-color: white;">
+                                        <input class="radio" onclick="c31_4();" type="radio" id="choice132_4" value="choice13">
+                                        <label class="lab" for="choice132_4">Musée des Beaux-Arts</label><br>
+                                    </td>
+                                </tr>
+                                <tr class="choices_tr">
+                                    <td class="choices_td"  id="c32_4" style="background-color: white;">
+                                        <input class="radio" onclick="c32_4();" type="radio" id="choice232_4" value="choice2">
+                                        <label class="lab" for="choice232_4">Conservatoire botanique national</label><br>
+                                    </td>
+                                </tr>
+                                <tr class="choices_tr">
+                                    <td class="choices_td"  id="c33_4" style="background-color: white;">
+                                        <input class="radio" onclick="c33_4();" type="radio" id="choice332_4" value="choice3">
+                                        <label class="lab" for="choice332_4">Musée National de la Marine</label><br>
+                                    </td>
+                                </tr>
+                            </table>
+                    </div>
+                </div>
+                <div class="fleche">
+                    
+                <table style="width: 100%; height: 50px;" >
+                    <tr style="width:100%; height: 100%;">
+                        <td class="left">
+                            <img class="fl" src="left.png" onclick="switch_page_left4();" id="l4" style="opacity:0.5;">
+                        </td>
+                        <td class="right">
+                            <img class="fl rightt" src="left.png" onclick="switch_page_right4();" id="r4" style="opacity:1;">
+                        </td>
+                    </tr>
+                </table>
+                </div>
+            </div>
+            <div class="valider">
+                <a class="btn" id="myBtn4"> <p class="btn_text">Valider</p></a>
+            </div>
+    
+            <div id="myModal4" class="modal">
+    
+                <div class="modal-content">
+                    <p> 50% <br> Votre indication est : x <br> Entrez le code de 4 chiffres pour accéder aux prochaines questions</p>
+                    <input type="text" placeholder="0000" id="code4" onkeyup="code4();">
+                </div>
+    
+            </div> 
+        </div>
+        <div id="part5" style="display: none;">
+            <div class="questions" style="display: block;">
+                <div id="qst1_5" style="display: block;">
+                    <div class="qst">
+                        <p class=text>
+                            qs 5
+                        </p>
+                    </div>
+                    <div class="choices">
+                            <table class="choices_table">
+                                <tr class="choices_tr">
+                                    <td class="choices_td" id="c11_5" style="background-color: white;">
+                                        <input class="radio" onclick="c11_5();" type="radio" id="choice12_5" value="choice1">
+                                        <label class="lab" for="choice12_5">Port de Brest  </label><br>
+                                    </td>
+                                </tr>
+                                <tr class="choices_tr">
+                                    <td class="choices_td"  id="c12_5" style="background-color: white;">
+                                        <input class="radio" onclick="c12_5();" type="radio" id="choice22_5" value="choice2">
+                                        <label class="lab" for="choice22_5">Fort Montebarey</label><br>
+                                    </td>
+                                </tr>
+                                <tr class="choices_tr">
+                                    <td class="choices_td"  id="c13_5" style="background-color: white;">
+                                        <input class="radio" onclick="c13_5();" type="radio" id="choice32_5" value="choice3">
+                                        <label class="lab" for="choice32_5">Oceanopolis </label><br>
+                                    </td>
+                                </tr>
+                            </table>
+                    </div>
+                </div>
+                <div id="qst2_5" style="display: none;">
+                    <div class="qst">
+                        <p class=text>
+                            qstn 1 karima
+                        </p>
+                    </div>
+                    <div class="choices">
+                            <table class="choices_table">
+                                <tr class="choices_tr">
+                                    <td class="choices_td" id="c21_5" style="background-color: white;">
+                                        <input class="radio" onclick="c21_5();" type="radio" id="choice122_5" value="choice12">
+                                        <label class="lab" for="choice122_5">Église Saint-Michel </label><br>
+                                    </td>
+                                </tr>
+                                <tr class="choices_tr">
+                                    <td class="choices_td"  id="c22_5" style="background-color: white;">
+                                        <input class="radio" onclick="c22_5();" type="radio" id="choice222_5" value="choice2">
+                                        <label class="lab" for="choice222_5">Église Saint-Louis</label><br>
+                                    </td>
+                                </tr>
+                                <tr class="choices_tr">
+                                    <td class="choices_td"  id="c23_5" style="background-color: white;">
+                                        <input class="radio" onclick="c23_5();" type="radio" id="choice322_5" value="choice3">
+                                        <label class="lab" for="choice322_5">Église Saint-Luc </label><br>
+                                    </td>
+                                </tr>
+                            </table>
+                    </div>
+                </div>
+                <div id="qst3_5" style="display: none;">
+                    <div class="qst">
+                        <p class=text>
+                        qs2
+                        </p>
+                    </div>
+                    <div class="choices">
+                            <table class="choices_table">
+                                <tr class="choices_tr">
+                                    <td class="choices_td" id="c31_5" style="background-color: white;">
+                                        <input class="radio" onclick="c31_5();" type="radio" id="choice132_5" value="choice13">
+                                        <label class="lab" for="choice132_5">Musée des Beaux-Arts</label><br>
+                                    </td>
+                                </tr>
+                                <tr class="choices_tr">
+                                    <td class="choices_td"  id="c32_5" style="background-color: white;">
+                                        <input class="radio" onclick="c32_5();" type="radio" id="choice232_5" value="choice2">
+                                        <label class="lab" for="choice232_5">Conservatoire botanique national</label><br>
+                                    </td>
+                                </tr>
+                                <tr class="choices_tr">
+                                    <td class="choices_td"  id="c33_5" style="background-color: white;">
+                                        <input class="radio" onclick="c33_5();" type="radio" id="choice332_5" value="choice3">
+                                        <label class="lab" for="choice332_5">Musée National de la Marine</label><br>
+                                    </td>
+                                </tr>
+                            </table>
+                    </div>
+                </div>
+                <div class="fleche">
+                    
+                <table style="width: 100%; height: 50px;" >
+                    <tr style="width:100%; height: 100%;">
+                        <td class="left">
+                            <img class="fl" src="left.png" onclick="switch_page_left5();" id="l5" style="opacity:0.5;">
+                        </td>
+                        <td class="right">
+                            <img class="fl rightt" src="left.png" onclick="switch_page_right5();" id="r5" style="opacity:1;">
+                        </td>
+                    </tr>
+                </table>
+                </div>
+            </div>
+            <div class="valider">
+                <a class="btn" id="myBtn5"> <p class="btn_text">Valider</p></a>
+            </div>
+    
+            <div id="myModal5" class="modal">
+    
+                <div class="modal-content">
+                    <p> 50% <br> Votre indication est : x <br> Entrez le nom du monument que vous avez rassemblé </p>
+                    <input type="text" placeholder="xxxxxxxxxxxx" id="code5" onkeyup="code5();">
+                    <p id="won" style="display: none; color: green; font-size: 100px; margin-top: 300px;"> Vous avez gagné !</p>
+                </div>
+    
+            </div> 
+        </div>
     </body>
 
+    <!--choosen answer-->
 <script>
+    //part 1
     function c11_1(){
         document.getElementById('c11_1').style.backgroundColor="#f6d2e0";
         document.getElementById('c12_1').style.backgroundColor="white";
         document.getElementById('c13_1').style.backgroundColor="white";
-        console.log("c11_1");
     }
     function c12_1(){
         document.getElementById('c12_1').style.backgroundColor="#f6d2e0";
@@ -151,8 +610,6 @@
         document.getElementById('c11_1').style.backgroundColor="white";
     }
     function c21_1(){
-        console.log("c_1");
-
         document.getElementById('c21_1').style.backgroundColor="#f6d2e0";
         document.getElementById('c22_1').style.backgroundColor="white";
         document.getElementById('c23_1').style.backgroundColor="white";
@@ -167,7 +624,6 @@
         document.getElementById('c22_1').style.backgroundColor="white";
         document.getElementById('c21_1').style.backgroundColor="white";
     }
-
     function c31_1(){
         document.getElementById('c31_1').style.backgroundColor="#f6d2e0";
         document.getElementById('c32_1').style.backgroundColor="white";
@@ -183,7 +639,197 @@
         document.getElementById('c32_1').style.backgroundColor="white";
         document.getElementById('c31_1').style.backgroundColor="white";
     }
+    
+    //part 2
+    function c11_2(){
+        document.getElementById('c11_2').style.backgroundColor="#f6d2e0";
+        document.getElementById('c12_2').style.backgroundColor="white";
+        document.getElementById('c13_2').style.backgroundColor="white";
+    }
+    function c12_2(){
+        document.getElementById('c12_2').style.backgroundColor="#f6d2e0";
+        document.getElementById('c11_2').style.backgroundColor="white";
+        document.getElementById('c13_2').style.backgroundColor="white";
+    }
+    function c13_2(){
+        document.getElementById('c13_2').style.backgroundColor="#f6d2e0";
+        document.getElementById('c12_2').style.backgroundColor="white";
+        document.getElementById('c11_2').style.backgroundColor="white";
+    }
+    function c21_2(){
+        document.getElementById('c21_2').style.backgroundColor="#f6d2e0";
+        document.getElementById('c22_2').style.backgroundColor="white";
+        document.getElementById('c23_2').style.backgroundColor="white";
+    }
+    function c22_2(){
+        document.getElementById('c22_2').style.backgroundColor="#f6d2e0";
+        document.getElementById('c21_2').style.backgroundColor="white";
+        document.getElementById('c23_2').style.backgroundColor="white";
+    }
+    function c23_2(){
+        document.getElementById('c23_2').style.backgroundColor="#f6d2e0";
+        document.getElementById('c22_2').style.backgroundColor="white";
+        document.getElementById('c21_2').style.backgroundColor="white";
+    }
+    function c31_2(){
+        document.getElementById('c31_2').style.backgroundColor="#f6d2e0";
+        document.getElementById('c32_2').style.backgroundColor="white";
+        document.getElementById('c33_2').style.backgroundColor="white";
+    }
+    function c32_2(){
+        document.getElementById('c32_2').style.backgroundColor="#f6d2e0";
+        document.getElementById('c31_2').style.backgroundColor="white";
+        document.getElementById('c33_2').style.backgroundColor="white";
+    }
+    function c33_2(){
+        document.getElementById('c33_2').style.backgroundColor="#f6d2e0";
+        document.getElementById('c32_2').style.backgroundColor="white";
+        document.getElementById('c31_2').style.backgroundColor="white";
+    }
+    
+    //part 3
+    function c11_3(){
+        document.getElementById('c11_3').style.backgroundColor="#f6d2e0";
+        document.getElementById('c12_3').style.backgroundColor="white";
+        document.getElementById('c13_3').style.backgroundColor="white";
+    }
+    function c12_3(){
+        document.getElementById('c12_3').style.backgroundColor="#f6d2e0";
+        document.getElementById('c11_3').style.backgroundColor="white";
+        document.getElementById('c13_3').style.backgroundColor="white";
+    }
+    function c13_3(){
+        document.getElementById('c13_3').style.backgroundColor="#f6d2e0";
+        document.getElementById('c12_3').style.backgroundColor="white";
+        document.getElementById('c11_3').style.backgroundColor="white";
+    }
+    function c21_3(){
+        document.getElementById('c21_3').style.backgroundColor="#f6d2e0";
+        document.getElementById('c22_3').style.backgroundColor="white";
+        document.getElementById('c23_3').style.backgroundColor="white";
+    }
+    function c22_3(){
+        document.getElementById('c22_3').style.backgroundColor="#f6d2e0";
+        document.getElementById('c21_3').style.backgroundColor="white";
+        document.getElementById('c23_3').style.backgroundColor="white";
+    }
+    function c23_3(){
+        document.getElementById('c23_3').style.backgroundColor="#f6d2e0";
+        document.getElementById('c22_3').style.backgroundColor="white";
+        document.getElementById('c21_3').style.backgroundColor="white";
+    }
+    function c31_3(){
+        document.getElementById('c31_3').style.backgroundColor="#f6d2e0";
+        document.getElementById('c32_3').style.backgroundColor="white";
+        document.getElementById('c33_3').style.backgroundColor="white";
+    }
+    function c32_3(){
+        document.getElementById('c32_3').style.backgroundColor="#f6d2e0";
+        document.getElementById('c31_3').style.backgroundColor="white";
+        document.getElementById('c33_3').style.backgroundColor="white";
+    }
+    function c33_3(){
+        document.getElementById('c33_3').style.backgroundColor="#f6d2e0";
+        document.getElementById('c32_3').style.backgroundColor="white";
+        document.getElementById('c31_3').style.backgroundColor="white";
+    }
+
+    //part 4
+    function c11_4(){
+        document.getElementById('c11_4').style.backgroundColor="#f6d2e0";
+        document.getElementById('c12_4').style.backgroundColor="white";
+        document.getElementById('c13_4').style.backgroundColor="white";
+    }
+    function c12_4(){
+        document.getElementById('c12_4').style.backgroundColor="#f6d2e0";
+        document.getElementById('c11_4').style.backgroundColor="white";
+        document.getElementById('c13_4').style.backgroundColor="white";
+    }
+    function c13_4(){
+        document.getElementById('c13_4').style.backgroundColor="#f6d2e0";
+        document.getElementById('c12_4').style.backgroundColor="white";
+        document.getElementById('c11_4').style.backgroundColor="white";
+    }
+    function c21_4(){
+        document.getElementById('c21_4').style.backgroundColor="#f6d2e0";
+        document.getElementById('c22_4').style.backgroundColor="white";
+        document.getElementById('c23_4').style.backgroundColor="white";
+    }
+    function c22_4(){
+        document.getElementById('c22_4').style.backgroundColor="#f6d2e0";
+        document.getElementById('c21_4').style.backgroundColor="white";
+        document.getElementById('c23_4').style.backgroundColor="white";
+    }
+    function c23_4(){
+        document.getElementById('c23_4').style.backgroundColor="#f6d2e0";
+        document.getElementById('c22_4').style.backgroundColor="white";
+        document.getElementById('c21_4').style.backgroundColor="white";
+    }
+    function c31_4(){
+        document.getElementById('c31_4').style.backgroundColor="#f6d2e0";
+        document.getElementById('c32_4').style.backgroundColor="white";
+        document.getElementById('c33_4').style.backgroundColor="white";
+    }
+    function c32_4(){
+        document.getElementById('c32_4').style.backgroundColor="#f6d2e0";
+        document.getElementById('c31_4').style.backgroundColor="white";
+        document.getElementById('c33_4').style.backgroundColor="white";
+    }
+    function c33_4(){
+        document.getElementById('c33_4').style.backgroundColor="#f6d2e0";
+        document.getElementById('c32_4').style.backgroundColor="white";
+        document.getElementById('c31_4').style.backgroundColor="white";
+    }
+    
+    //part 5
+    function c11_5(){
+        document.getElementById('c11_5').style.backgroundColor="#f6d2e0";
+        document.getElementById('c12_5').style.backgroundColor="white";
+        document.getElementById('c13_5').style.backgroundColor="white";
+    }
+    function c12_5(){
+        document.getElementById('c12_5').style.backgroundColor="#f6d2e0";
+        document.getElementById('c11_5').style.backgroundColor="white";
+        document.getElementById('c13_5').style.backgroundColor="white";
+    }
+    function c13_5(){
+        document.getElementById('c13_5').style.backgroundColor="#f6d2e0";
+        document.getElementById('c12_5').style.backgroundColor="white";
+        document.getElementById('c11_5').style.backgroundColor="white";
+    }
+    function c21_5(){
+        document.getElementById('c21_5').style.backgroundColor="#f6d2e0";
+        document.getElementById('c22_5').style.backgroundColor="white";
+        document.getElementById('c23_5').style.backgroundColor="white";
+    }
+    function c22_5(){
+        document.getElementById('c22_5').style.backgroundColor="#f6d2e0";
+        document.getElementById('c21_5').style.backgroundColor="white";
+        document.getElementById('c23_5').style.backgroundColor="white";
+    }
+    function c23_5(){
+        document.getElementById('c23_5').style.backgroundColor="#f6d2e0";
+        document.getElementById('c22_5').style.backgroundColor="white";
+        document.getElementById('c21_5').style.backgroundColor="white";
+    }
+    function c31_5(){
+        document.getElementById('c31_5').style.backgroundColor="#f6d2e0";
+        document.getElementById('c32_5').style.backgroundColor="white";
+        document.getElementById('c33_5').style.backgroundColor="white";
+    }
+    function c32_5(){
+        document.getElementById('c32_5').style.backgroundColor="#f6d2e0";
+        document.getElementById('c31_5').style.backgroundColor="white";
+        document.getElementById('c33_5').style.backgroundColor="white";
+    }
+    function c33_5(){
+        document.getElementById('c33_5').style.backgroundColor="#f6d2e0";
+        document.getElementById('c32_5').style.backgroundColor="white";
+        document.getElementById('c31_5').style.backgroundColor="white";
+    }
+    
 </script>
+<!--countdown-->
 <script>
     const startingMinutes = 60;
     let time = startingMinutes * 60;
@@ -203,16 +849,53 @@
          }
          else{
              time=0;
+             //stop the game
          }
      }
-
+</script>
+<!--Code , fleches-->
+<script>
      function code(){
          var code_entre= parseInt(document.getElementById('code1').value);
-         if(code_entre==1234){
-            document.getElementById('q1').style.display="none";
+         if(code_entre==1){
+            document.getElementById('part1').style.display="none";
+            document.getElementById('part2').style.display="block";
             document.getElementById('myModal').style.display="none";
          }
      }
+     function code2(){
+         var code_entre= parseInt(document.getElementById('code2').value);
+         if(code_entre==12){
+            document.getElementById('part2').style.display="none";
+            document.getElementById('part3').style.display="block";
+            document.getElementById('myModal2').style.display="none";
+         }
+     }
+     function code3(){
+         var code_entre= parseInt(document.getElementById('code3').value);
+         if(code_entre==123){
+            document.getElementById('part3').style.display="none";
+            document.getElementById('part4').style.display="block";
+            document.getElementById('myModal3').style.display="none";
+         }
+     }
+     function code4(){
+         var code_entre= parseInt(document.getElementById('code4').value);
+         if(code_entre==1234){
+            document.getElementById('part4').style.display="none";
+            document.getElementById('part5').style.display="block";
+            document.getElementById('myModal4').style.display="none";
+         }
+     }
+     //not done
+     function code5(){
+         var code_entre= document.getElementById('code5').value.toLowerCase() ;
+         if(code_entre=="musée de la marine"){
+            document.getElementById('won').style.display="block";
+            document.getElementById('code5').contentEditable="false";
+         }
+     }
+
      function switch_page_right(){
         if ( document.getElementById('qst1').style.display=="block"){
             document.getElementById('qst1').style.display="none";
@@ -251,24 +934,209 @@
         }
      }
 
+     function switch_page_right2(){
+        if ( document.getElementById('qst1_2').style.display=="block"){
+            document.getElementById('qst1_2').style.display="none";
+            document.getElementById('qst2_2').style.display="block";
+            document.getElementById('qst3_2').style.display="none"
+            document.getElementById('l2').style.opacity=1;
+            document.getElementById('r2').style.opacity=1;
+        }
+        else if ( document.getElementById('qst2_2').style.display=="block"){
+            document.getElementById('qst1_2').style.display="none";
+            document.getElementById('qst2_2').style.display="none";
+            document.getElementById('qst3_2').style.display="block"
+            document.getElementById('l2').style.opacity=1;
+            document.getElementById('r2').style.opacity=0.5;
+        }
+        else if ( document.getElementById('qst3_2').style.display=="block"){
+        }
+     }
+
+     function switch_page_left2(){
+        if ( document.getElementById('qst3_2').style.display=="block"){
+            document.getElementById('qst1_2').style.display="none";
+            document.getElementById('qst2_2').style.display="block";
+            document.getElementById('qst3_2').style.display="none"
+            document.getElementById('l2').style.opacity=1;
+            document.getElementById('r2').style.opacity=1;
+        }
+        else if ( document.getElementById('qst2_2').style.display=="block"){
+            document.getElementById('qst1_2').style.display="block";
+            document.getElementById('qst2_2').style.display="none";
+            document.getElementById('qst3_2').style.display="none"
+            document.getElementById('r2').style.opacity=1;
+            document.getElementById('l2').style.opacity=0.5;
+        }
+        else if ( document.getElementById('qst1_2').style.display=="block"){
+        }
+     }
+
+     function switch_page_right3(){
+        if ( document.getElementById('qst1_3').style.display=="block"){
+            document.getElementById('qst1_3').style.display="none";
+            document.getElementById('qst2_3').style.display="block";
+            document.getElementById('qst3_3').style.display="none"
+            document.getElementById('l3').style.opacity=1;
+            document.getElementById('r3').style.opacity=1;
+        }
+        else if ( document.getElementById('qst2_3').style.display=="block"){
+            document.getElementById('qst1_3').style.display="none";
+            document.getElementById('qst2_3').style.display="none";
+            document.getElementById('qst3_3').style.display="block"
+            document.getElementById('l3').style.opacity=1;
+            document.getElementById('r3').style.opacity=0.5;
+        }
+        else if ( document.getElementById('qst3_3').style.display=="block"){
+        }
+     }
+
+     function switch_page_left3(){
+        if ( document.getElementById('qst3_3').style.display=="block"){
+            document.getElementById('qst1_3').style.display="none";
+            document.getElementById('qst2_3').style.display="block";
+            document.getElementById('qst3_3').style.display="none"
+            document.getElementById('l3').style.opacity=1;
+            document.getElementById('r3').style.opacity=1;
+        }
+        else if ( document.getElementById('qst2_3').style.display=="block"){
+            document.getElementById('qst1_3').style.display="block";
+            document.getElementById('qst2_3').style.display="none";
+            document.getElementById('qst3_3').style.display="none"
+            document.getElementById('r3').style.opacity=1;
+            document.getElementById('l3').style.opacity=0.5;
+        }
+        else if ( document.getElementById('qst1_3').style.display=="block"){
+        }
+     }
+     
+     function switch_page_right4(){
+        if ( document.getElementById('qst1_4').style.display=="block"){
+            document.getElementById('qst1_4').style.display="none";
+            document.getElementById('qst2_4').style.display="block";
+            document.getElementById('qst3_4').style.display="none"
+            document.getElementById('l4').style.opacity=1;
+            document.getElementById('r4').style.opacity=1;
+        }
+        else if ( document.getElementById('qst2_4').style.display=="block"){
+            document.getElementById('qst1_4').style.display="none";
+            document.getElementById('qst2_4').style.display="none";
+            document.getElementById('qst3_4').style.display="block"
+            document.getElementById('l4').style.opacity=1;
+            document.getElementById('r4').style.opacity=0.5;
+        }
+        else if ( document.getElementById('qst3_4').style.display=="block"){
+        }
+     }
+
+     function switch_page_left4(){
+        if ( document.getElementById('qst3_4').style.display=="block"){
+            document.getElementById('qst1_4').style.display="none";
+            document.getElementById('qst2_4').style.display="block";
+            document.getElementById('qst3_4').style.display="none"
+            document.getElementById('l4').style.opacity=1;
+            document.getElementById('r4').style.opacity=1;
+        }
+        else if ( document.getElementById('qst2_4').style.display=="block"){
+            document.getElementById('qst1_4').style.display="block";
+            document.getElementById('qst2_4').style.display="none";
+            document.getElementById('qst3_4').style.display="none"
+            document.getElementById('r4').style.opacity=1;
+            document.getElementById('l4').style.opacity=0.5;
+        }
+        else if ( document.getElementById('qst1_4').style.display=="block"){
+        }
+     }
+
+     function switch_page_right5(){
+        if ( document.getElementById('qst1_5').style.display=="block"){
+            document.getElementById('qst1_5').style.display="none";
+            document.getElementById('qst2_5').style.display="block";
+            document.getElementById('qst3_5').style.display="none"
+            document.getElementById('l5').style.opacity=1;
+            document.getElementById('r5').style.opacity=1;
+        }
+        else if ( document.getElementById('qst2_5').style.display=="block"){
+            document.getElementById('qst1_5').style.display="none";
+            document.getElementById('qst2_5').style.display="none";
+            document.getElementById('qst3_5').style.display="block"
+            document.getElementById('l5').style.opacity=1;
+            document.getElementById('r5').style.opacity=0.5;
+        }
+        else if ( document.getElementById('qst3_5').style.display=="block"){
+        }
+     }
+
+     function switch_page_left5(){
+        if ( document.getElementById('qst3_5').style.display=="block"){
+            document.getElementById('qst1_5').style.display="none";
+            document.getElementById('qst2_5').style.display="block";
+            document.getElementById('qst3_5').style.display="none"
+            document.getElementById('l5').style.opacity=1;
+            document.getElementById('r5').style.opacity=1;
+        }
+        else if ( document.getElementById('qst2_5').style.display=="block"){
+            document.getElementById('qst1_5').style.display="block";
+            document.getElementById('qst2_5').style.display="none";
+            document.getElementById('qst3_5').style.display="none"
+            document.getElementById('r5').style.opacity=1;
+            document.getElementById('l5').style.opacity=0.5;
+        }
+        else if ( document.getElementById('qst1_5').style.display=="block"){
+        }
+     }
+
 </script>
+<!--modal-->
 <script>
-// Get the modal
 var modal = document.getElementById("myModal");
 
-// Get the button that opens the modal
 var btn = document.getElementById("myBtn");
 
-// Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks on the button, open the modal
 btn.onclick = function() {
   modal.style.display = "block";
 }
 
+var modal2 = document.getElementById("myModal2");
 
+var btn2 = document.getElementById("myBtn2");
 
+var span2 = document.getElementsByClassName("close")[0];
 
+btn2.onclick = function() {
+  modal2.style.display = "block";
+}
+
+var modal3 = document.getElementById("myModal3");
+
+var btn3 = document.getElementById("myBtn3");
+
+var span3 = document.getElementsByClassName("close")[0];
+
+btn3.onclick = function() {
+  modal3.style.display = "block";
+}
+
+var modal4 = document.getElementById("myModal4");
+
+var btn4 = document.getElementById("myBtn4");
+
+var span4 = document.getElementsByClassName("close")[0];
+
+btn4.onclick = function() {
+  modal4.style.display = "block";
+}
+
+var modal5 = document.getElementById("myModal5");
+
+var btn5 = document.getElementById("myBtn5");
+
+var span5 = document.getElementsByClassName("close")[0];
+
+btn5.onclick = function() {
+  modal5.style.display = "block";
+}
 </script>
 </html>
