@@ -117,7 +117,7 @@
             <div id="myModal" class="modal">
 
             <div class="modal-content">
-                <p> 80% <br> Votre indication est : x <br> Entrez le code de 4 chiffres pour accéder aux prochaines questions</p>
+                <p> 80% <br> Votre indication est : <br>M---- d- -a ------ <br> Entrez le code de 4 chiffres pour accéder aux prochaines questions</p>
                 <input type="text" placeholder="0000" id="code1" onkeyup="code();">
             </div>
 
@@ -234,7 +234,7 @@
             <div id="myModal2" class="modal">
     
                 <div class="modal-content">
-                    <p> 50% <br> Votre indication est : x <br> Entrez le code de 4 chiffres pour accéder aux prochaines questions</p>
+                    <p> 50% <br> Votre indication est :<br> ----e -- -- --ri-- <br> Entrez le code de 4 chiffres pour accéder aux prochaines questions</p>
                     <input type="text" placeholder="0000" id="code2" onkeyup="code2();">
                 </div>
     
@@ -350,7 +350,7 @@
             <div id="myModal3" class="modal">
     
                 <div class="modal-content">
-                    <p> 50% <br> Votre indication est : x <br> Entrez le code de 4 chiffres pour accéder aux prochaines questions</p>
+                    <p> 50% <br> Votre indication est : <br>-us-- -e -- ------ <br> Entrez le code de 4 chiffres pour accéder aux prochaines questions</p>
                     <input type="text" placeholder="0000" id="code3" onkeyup="code3();">
                 </div>
     
@@ -375,13 +375,13 @@
                                 <tr class="choices_tr">
                                     <td class="choices_td"  id="c12_4" style="background-color: white;">
                                         <input class="radio" onclick="c12_4();" type="radio" id="choice22_4" value="choice2">
-                                        <label class="lab" for="choice22_4">Fort Montebarey</label><br>
+                                        <label class="lab" for="choice22_4">Oceanopolis </label><br>
                                     </td>
                                 </tr>
                                 <tr class="choices_tr">
                                     <td class="choices_td"  id="c13_4" style="background-color: white;">
                                         <input class="radio" onclick="c13_4();" type="radio" id="choice32_4" value="choice3">
-                                        <label class="lab" for="choice32_4">Oceanopolis </label><br>
+                                        <label class="lab" for="choice32_4">Fort Montbarey</label><br>
                                     </td>
                                 </tr>
                             </table>
@@ -402,13 +402,13 @@
                                 <tr class="choices_tr">
                                     <td class="choices_td" id="c21_4" style="background-color: white;">
                                         <input class="radio" onclick="c21_4();" type="radio" id="choice122_4" value="choice12">
-                                        <label class="lab" for="choice122_4">Fort Montbarey</label><br>
+                                        <label class="lab" for="choice122_4">Les Ateliers des Capucins</label><br>
                                     </td>
                                 </tr>
                                 <tr class="choices_tr">
                                     <td class="choices_td"  id="c22_4" style="background-color: white;">
                                         <input class="radio" onclick="c22_4();" type="radio" id="choice222_4" value="choice2">
-                                        <label class="lab" for="choice222_4">Les Ateliers des Capucins</label><br>
+                                        <label class="lab" for="choice222_4">Fort Montbarey</label><br>
                                     </td>
                                 </tr>
                                 <tr class="choices_tr">
@@ -472,7 +472,7 @@
             <div id="myModal4" class="modal">
     
                 <div class="modal-content">
-                    <p> 50% <br> Votre indication est : x <br> Entrez le code de 4 chiffres pour accéder aux prochaines questions</p>
+                    <p> 50% <br> Votre indication est :<br>----- -- l- -a---e <br> Entrez le code de 4 chiffres pour accéder aux prochaines questions</p>
                     <input type="text" placeholder="0000" id="code4" onkeyup="code4();">
                 </div>
     
@@ -592,7 +592,7 @@
             <div id="myModal5" class="modal">
     
                 <div class="modal-content">
-                    <p> 50% <br> Votre indication est : x <br> Entrez le nom du monument que vous avez rassemblé </p>
+                    <p> 50% <br> Votre indication est :<br> ---é- -- -- m---n- <br> Entrez le nom du monument que vous avez rassemblé </p>
                     <input type="text" placeholder="xxxxxxxxxxxx" id="code5" onkeyup="code5();">
                     <p id="won" style="display: none; color: green; font-size: 100px; margin-top: 300px;"> Vous avez gagné !</p>
                 </div>
@@ -610,51 +610,64 @@
 
 <!--choosen answer-->
 <script>
+    var answer1;
+    var answer2;
+    var answer3;
+
     //part 1
     function c11_1(){
         document.getElementById('c11_1').style.backgroundColor="#f6d2e0";
         document.getElementById('c12_1').style.backgroundColor="white";
         document.getElementById('c13_1').style.backgroundColor="white";
+        answer1=1;
     }
     function c12_1(){
         document.getElementById('c12_1').style.backgroundColor="#f6d2e0";
         document.getElementById('c11_1').style.backgroundColor="white";
         document.getElementById('c13_1').style.backgroundColor="white";
+        answer1=2;
     }
     function c13_1(){
         document.getElementById('c13_1').style.backgroundColor="#f6d2e0";
         document.getElementById('c12_1').style.backgroundColor="white";
         document.getElementById('c11_1').style.backgroundColor="white";
+        answer1=3;
     }
     function c21_1(){
         document.getElementById('c21_1').style.backgroundColor="#f6d2e0";
         document.getElementById('c22_1').style.backgroundColor="white";
         document.getElementById('c23_1').style.backgroundColor="white";
+        answer2=1;
     }
     function c22_1(){
         document.getElementById('c22_1').style.backgroundColor="#f6d2e0";
         document.getElementById('c21_1').style.backgroundColor="white";
         document.getElementById('c23_1').style.backgroundColor="white";
+        answer2=2;
     }
     function c23_1(){
         document.getElementById('c23_1').style.backgroundColor="#f6d2e0";
         document.getElementById('c22_1').style.backgroundColor="white";
         document.getElementById('c21_1').style.backgroundColor="white";
+        answer2=3;
     }
     function c31_1(){
         document.getElementById('c31_1').style.backgroundColor="#f6d2e0";
         document.getElementById('c32_1').style.backgroundColor="white";
         document.getElementById('c33_1').style.backgroundColor="white";
+        answer3=1;
     }
     function c32_1(){
         document.getElementById('c32_1').style.backgroundColor="#f6d2e0";
         document.getElementById('c31_1').style.backgroundColor="white";
         document.getElementById('c33_1').style.backgroundColor="white";
+        answer3=2;
     }
     function c33_1(){
         document.getElementById('c33_1').style.backgroundColor="#f6d2e0";
         document.getElementById('c32_1').style.backgroundColor="white";
         document.getElementById('c31_1').style.backgroundColor="white";
+        answer3=3;
     }
     
     //part 2
@@ -662,46 +675,55 @@
         document.getElementById('c11_2').style.backgroundColor="#f6d2e0";
         document.getElementById('c12_2').style.backgroundColor="white";
         document.getElementById('c13_2').style.backgroundColor="white";
+        answer1=1;
     }
     function c12_2(){
         document.getElementById('c12_2').style.backgroundColor="#f6d2e0";
         document.getElementById('c11_2').style.backgroundColor="white";
         document.getElementById('c13_2').style.backgroundColor="white";
+        answer1=2;
     }
     function c13_2(){
         document.getElementById('c13_2').style.backgroundColor="#f6d2e0";
         document.getElementById('c12_2').style.backgroundColor="white";
         document.getElementById('c11_2').style.backgroundColor="white";
+        answer1=3;
     }
     function c21_2(){
         document.getElementById('c21_2').style.backgroundColor="#f6d2e0";
         document.getElementById('c22_2').style.backgroundColor="white";
         document.getElementById('c23_2').style.backgroundColor="white";
+        answer2=1;
     }
     function c22_2(){
         document.getElementById('c22_2').style.backgroundColor="#f6d2e0";
         document.getElementById('c21_2').style.backgroundColor="white";
         document.getElementById('c23_2').style.backgroundColor="white";
+        answer2=2;
     }
     function c23_2(){
         document.getElementById('c23_2').style.backgroundColor="#f6d2e0";
         document.getElementById('c22_2').style.backgroundColor="white";
         document.getElementById('c21_2').style.backgroundColor="white";
+        answer2=3;
     }
     function c31_2(){
         document.getElementById('c31_2').style.backgroundColor="#f6d2e0";
         document.getElementById('c32_2').style.backgroundColor="white";
         document.getElementById('c33_2').style.backgroundColor="white";
+        answer3=1;
     }
     function c32_2(){
         document.getElementById('c32_2').style.backgroundColor="#f6d2e0";
         document.getElementById('c31_2').style.backgroundColor="white";
         document.getElementById('c33_2').style.backgroundColor="white";
+        answer3=2;
     }
     function c33_2(){
         document.getElementById('c33_2').style.backgroundColor="#f6d2e0";
         document.getElementById('c32_2').style.backgroundColor="white";
         document.getElementById('c31_2').style.backgroundColor="white";
+        answer3=3;
     }
     
     //part 3
@@ -709,46 +731,55 @@
         document.getElementById('c11_3').style.backgroundColor="#f6d2e0";
         document.getElementById('c12_3').style.backgroundColor="white";
         document.getElementById('c13_3').style.backgroundColor="white";
+        answer1=1;
     }
     function c12_3(){
         document.getElementById('c12_3').style.backgroundColor="#f6d2e0";
         document.getElementById('c11_3').style.backgroundColor="white";
         document.getElementById('c13_3').style.backgroundColor="white";
+        answer1=2;
     }
     function c13_3(){
         document.getElementById('c13_3').style.backgroundColor="#f6d2e0";
         document.getElementById('c12_3').style.backgroundColor="white";
         document.getElementById('c11_3').style.backgroundColor="white";
+        answer1=3;
     }
     function c21_3(){
         document.getElementById('c21_3').style.backgroundColor="#f6d2e0";
         document.getElementById('c22_3').style.backgroundColor="white";
         document.getElementById('c23_3').style.backgroundColor="white";
+        answer2=1;
     }
     function c22_3(){
         document.getElementById('c22_3').style.backgroundColor="#f6d2e0";
         document.getElementById('c21_3').style.backgroundColor="white";
         document.getElementById('c23_3').style.backgroundColor="white";
+        answer2=2;
     }
     function c23_3(){
         document.getElementById('c23_3').style.backgroundColor="#f6d2e0";
         document.getElementById('c22_3').style.backgroundColor="white";
         document.getElementById('c21_3').style.backgroundColor="white";
+        answer3=2;
     }
     function c31_3(){
         document.getElementById('c31_3').style.backgroundColor="#f6d2e0";
         document.getElementById('c32_3').style.backgroundColor="white";
         document.getElementById('c33_3').style.backgroundColor="white";
+        answer3=1;
     }
     function c32_3(){
         document.getElementById('c32_3').style.backgroundColor="#f6d2e0";
         document.getElementById('c31_3').style.backgroundColor="white";
         document.getElementById('c33_3').style.backgroundColor="white";
+        answer3=2;
     }
     function c33_3(){
         document.getElementById('c33_3').style.backgroundColor="#f6d2e0";
         document.getElementById('c32_3').style.backgroundColor="white";
         document.getElementById('c31_3').style.backgroundColor="white";
+        answer3=3;
     }
 
     //part 4
@@ -756,46 +787,55 @@
         document.getElementById('c11_4').style.backgroundColor="#f6d2e0";
         document.getElementById('c12_4').style.backgroundColor="white";
         document.getElementById('c13_4').style.backgroundColor="white";
+        answer1=1;
     }
     function c12_4(){
         document.getElementById('c12_4').style.backgroundColor="#f6d2e0";
         document.getElementById('c11_4').style.backgroundColor="white";
         document.getElementById('c13_4').style.backgroundColor="white";
+        answer1=2;
     }
     function c13_4(){
         document.getElementById('c13_4').style.backgroundColor="#f6d2e0";
         document.getElementById('c12_4').style.backgroundColor="white";
         document.getElementById('c11_4').style.backgroundColor="white";
+        answer1=3;
     }
     function c21_4(){
         document.getElementById('c21_4').style.backgroundColor="#f6d2e0";
         document.getElementById('c22_4').style.backgroundColor="white";
         document.getElementById('c23_4').style.backgroundColor="white";
+        answer2=1;
     }
     function c22_4(){
         document.getElementById('c22_4').style.backgroundColor="#f6d2e0";
         document.getElementById('c21_4').style.backgroundColor="white";
         document.getElementById('c23_4').style.backgroundColor="white";
+        answer2=2;
     }
     function c23_4(){
         document.getElementById('c23_4').style.backgroundColor="#f6d2e0";
         document.getElementById('c22_4').style.backgroundColor="white";
         document.getElementById('c21_4').style.backgroundColor="white";
+        answer2=3;
     }
     function c31_4(){
         document.getElementById('c31_4').style.backgroundColor="#f6d2e0";
         document.getElementById('c32_4').style.backgroundColor="white";
         document.getElementById('c33_4').style.backgroundColor="white";
+        answer3=1;
     }
     function c32_4(){
         document.getElementById('c32_4').style.backgroundColor="#f6d2e0";
         document.getElementById('c31_4').style.backgroundColor="white";
         document.getElementById('c33_4').style.backgroundColor="white";
+        answer3=2;
     }
     function c33_4(){
         document.getElementById('c33_4').style.backgroundColor="#f6d2e0";
         document.getElementById('c32_4').style.backgroundColor="white";
         document.getElementById('c31_4').style.backgroundColor="white";
+        answer3=3;
     }
     
     //part 5
@@ -803,46 +843,55 @@
         document.getElementById('c11_5').style.backgroundColor="#f6d2e0";
         document.getElementById('c12_5').style.backgroundColor="white";
         document.getElementById('c13_5').style.backgroundColor="white";
+        answer1=1;
     }
     function c12_5(){
         document.getElementById('c12_5').style.backgroundColor="#f6d2e0";
         document.getElementById('c11_5').style.backgroundColor="white";
         document.getElementById('c13_5').style.backgroundColor="white";
+        answer1=2;
     }
     function c13_5(){
         document.getElementById('c13_5').style.backgroundColor="#f6d2e0";
         document.getElementById('c12_5').style.backgroundColor="white";
         document.getElementById('c11_5').style.backgroundColor="white";
+        answer1=3;
     }
     function c21_5(){
         document.getElementById('c21_5').style.backgroundColor="#f6d2e0";
         document.getElementById('c22_5').style.backgroundColor="white";
         document.getElementById('c23_5').style.backgroundColor="white";
+        answer2=1;
     }
     function c22_5(){
         document.getElementById('c22_5').style.backgroundColor="#f6d2e0";
         document.getElementById('c21_5').style.backgroundColor="white";
         document.getElementById('c23_5').style.backgroundColor="white";
+        answer2=2;
     }
     function c23_5(){
         document.getElementById('c23_5').style.backgroundColor="#f6d2e0";
         document.getElementById('c22_5').style.backgroundColor="white";
         document.getElementById('c21_5').style.backgroundColor="white";
+        answer2=3;
     }
     function c31_5(){
         document.getElementById('c31_5').style.backgroundColor="#f6d2e0";
         document.getElementById('c32_5').style.backgroundColor="white";
         document.getElementById('c33_5').style.backgroundColor="white";
+        answer3=1;
     }
     function c32_5(){
         document.getElementById('c32_5').style.backgroundColor="#f6d2e0";
         document.getElementById('c31_5').style.backgroundColor="white";
         document.getElementById('c33_5').style.backgroundColor="white";
+        answer3=2;
     }
     function c33_5(){
         document.getElementById('c33_5').style.backgroundColor="#f6d2e0";
         document.getElementById('c32_5').style.backgroundColor="white";
         document.getElementById('c31_5').style.backgroundColor="white";
+        answer3=3;
     }
     
 </script>
@@ -898,7 +947,7 @@
      }
      function code4(){
          var code_entre= parseInt(document.getElementById('code4').value);
-         if(code_entre==0072){
+         if(code_entre==1072){
             document.getElementById('part4').style.display="none";
             document.getElementById('part5').style.display="block";
             document.getElementById('myModal4').style.display="none";
@@ -1112,7 +1161,16 @@ var btn = document.getElementById("myBtn");
 var span = document.getElementsByClassName("close")[0];
 
 btn.onclick = function() {
-  modal.style.display = "block";
+    modal.style.display = "block";
+        if(answer1!=2){
+            time-=10;   
+        }
+        if(answer2!=1){
+            time-=10;   
+        }
+        if(answer3!=1){
+            time-=10;   
+        }
 }
 
 var modal2 = document.getElementById("myModal2");
@@ -1120,9 +1178,19 @@ var modal2 = document.getElementById("myModal2");
 var btn2 = document.getElementById("myBtn2");
 
 var span2 = document.getElementsByClassName("close")[0];
-
+//baqi
 btn2.onclick = function() {
-  modal2.style.display = "block";
+    modal2.style.display = "block";
+        if(answer1!=1){
+            time-=10;   
+        }
+        //idk
+        if(answer2!=1){
+            time-=10;   
+        }
+        if(answer3!=3){
+            time-=10;   
+        }
 }
 
 var modal3 = document.getElementById("myModal3");
@@ -1132,7 +1200,16 @@ var btn3 = document.getElementById("myBtn3");
 var span3 = document.getElementsByClassName("close")[0];
 
 btn3.onclick = function() {
-  modal3.style.display = "block";
+    modal3.style.display = "block";
+        if(answer1!=2){
+            time-=10;   
+        }
+        if(answer2!=2){
+            time-=10;   
+        }
+        if(answer3!=2){
+            time-=10;   
+        }
 }
 
 var modal4 = document.getElementById("myModal4");
@@ -1142,7 +1219,16 @@ var btn4 = document.getElementById("myBtn4");
 var span4 = document.getElementsByClassName("close")[0];
 
 btn4.onclick = function() {
-  modal4.style.display = "block";
+    modal4.style.display = "block";
+        if(answer1!=3){
+            time-=10;   
+        }
+        if(answer2!=1){
+            time-=10;   
+        }
+        if(answer3!=3){
+            time-=10;   
+        }
 }
 
 var modal5 = document.getElementById("myModal5");
@@ -1152,7 +1238,16 @@ var btn5 = document.getElementById("myBtn5");
 var span5 = document.getElementsByClassName("close")[0];
 
 btn5.onclick = function() {
-  modal5.style.display = "block";
+    modal5.style.display = "block";
+        if(answer1!=1){
+            time-=10;   
+        }
+        if(answer2!=2){
+            time-=10;   
+        }
+        if(answer3!=1){
+            time-=10;   
+        }
 }
 </script>
 </html>
