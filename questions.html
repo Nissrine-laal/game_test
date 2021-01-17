@@ -589,9 +589,16 @@
     
             </div> 
         </div>
+        <div id="time_out" class="modal">
+    
+            <div class="modal-content">
+                <p id="lose" style=" color: red; font-size: 100px; "> Time out <br> Game over</p>
+            </div>
+
+        </div> 
     </body>
 
-    <!--choosen answer-->
+<!--choosen answer-->
 <script>
     //part 1
     function c11_1(){
@@ -849,7 +856,7 @@
          }
          else{
              time=0;
-             //stop the game
+             document.getElementById('time_out').style.display="block";   
          }
      }
 </script>
@@ -857,7 +864,7 @@
 <script>
      function code(){
          var code_entre= parseInt(document.getElementById('code1').value);
-         if(code_entre==1){
+         if(code_entre==5298){
             document.getElementById('part1').style.display="none";
             document.getElementById('part2').style.display="block";
             document.getElementById('myModal').style.display="none";
@@ -865,7 +872,7 @@
      }
      function code2(){
          var code_entre= parseInt(document.getElementById('code2').value);
-         if(code_entre==12){
+         if(code_entre==4370){
             document.getElementById('part2').style.display="none";
             document.getElementById('part3').style.display="block";
             document.getElementById('myModal2').style.display="none";
@@ -873,7 +880,7 @@
      }
      function code3(){
          var code_entre= parseInt(document.getElementById('code3').value);
-         if(code_entre==123){
+         if(code_entre==6192){
             document.getElementById('part3').style.display="none";
             document.getElementById('part4').style.display="block";
             document.getElementById('myModal3').style.display="none";
@@ -881,13 +888,12 @@
      }
      function code4(){
          var code_entre= parseInt(document.getElementById('code4').value);
-         if(code_entre==1234){
+         if(code_entre==0072){
             document.getElementById('part4').style.display="none";
             document.getElementById('part5').style.display="block";
             document.getElementById('myModal4').style.display="none";
          }
      }
-     //not done
      function code5(){
          var code_entre= document.getElementById('code5').value.toLowerCase() ;
          if(code_entre=="musée de la marine"){
